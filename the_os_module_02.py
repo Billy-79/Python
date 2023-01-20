@@ -5,4 +5,4 @@ import os
 
 print(os.getcwd())
 
-os.rename("first.txt", "second.tx")
+os.rename("first.txt", "second.txt")
