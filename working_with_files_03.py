@@ -9,8 +9,8 @@ except FileNotFoundError as e:
     print(e)
     exit(1)
 
-movies = ["The Matrix, ", "The Lord of the Rings, ", "The Avengers - "]
+movies = ["The Matrix", "The Lord of the Rings", "The Avengers"]
 
 for m in movies:
-    file.write(m)
+    file.write(m + "\n")
 file.close()
