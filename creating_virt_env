@@ -61,3 +61,11 @@ which pip3
 pip install Flask
 
 # this will install additional packages that are required.
+
+# to uninstall a package e.g. " Flask "
+
+pip uninstall Flask
+
+# to see all installed packages
+
+pip list
