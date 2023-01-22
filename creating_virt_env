@@ -1,0 +1,63 @@
+# first we should install the following package
+
+sudo apt install python3-virtualenv
+
+# then
+
+which virtualenv
+
+# will output /usr/bin/virtualenv
+
+# to create the virtual environment
+
+virtualenv -p /usr/bin/python3 virtual_environments
+
+# enter the directory created from the previous command 
+
+# being in the directory isn't enough we must activate the virtual environment
+
+# with the following command
+
+source bin/activate
+
+# this will activate the virtual environment but also changed our bash prompt
+
+# moreover, if we do " which python " or " which python3 " we will get 
+
+# /home/<username>/<project name>/python or python3 accordingly, which means that the 
+
+# virtual environment use the binaries that have been copied into the folder that was 
+
+# created for the virtual environment
+
+# to deactivate the virtual environment
+
+deactivate
+
+# there are 2 ways to install a package in python we could install the distribution 
+
+# package, which means it will be available through the entire distribution or we can 
+
+# install a package within our virtual environment.
+
+# the best method though is to install a package within our virtual environment, as this 
+
+# will ensure for example that we don't have packages that only used in one or very few 
+
+# projects or even not using them at all but also it helps to avoid security risks.
+
+# so to install a package we use the pip3 command but within our virtual environment
+
+which pip3
+
+# to search for a package
+
+# CAUTION " pip search " no longer supported
+
+# Please use https://pypi.org/search (via a browser) instead.
+
+# to install e.g. " Flask " package
+
+pip install Flask
+
+# this will install additional packages that are required.
