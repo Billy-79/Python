@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-age = input("Enter your age:\n")
+age = input("Enter your age:" + "\n")
 print("You are " + age + " years old.")
 
 age2 = int(age) + 50

@@ -3,7 +3,7 @@
 
 while True:
     try:
-        age = int(input("Enter your age:\n"))
+        age = int(input("Enter your age:" + "\n"))
         break
 
     except ValueError:
